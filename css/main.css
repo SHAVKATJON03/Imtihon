@@ -1,0 +1,680 @@
+* {
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins";
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.container {
+  padding: 0 30px 0 30px;
+  margin: 0 auto;
+  max-width: 1340px;
+  width: 100%;
+}
+.flex {
+  display: flex;
+}
+.jus-center {
+  justify-content: center;
+}
+.ali-item-center {
+  align-items: center;
+}
+.ali-item-start {
+  align-items: flex-start;
+}
+
+.justify-betven {
+  justify-content: space-between;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.justify-evenly {
+  justify-content: space-evenly;
+}
+:root {
+  --main-silver: #263238;
+  --main-black: #000000;
+  --main-white: #ffffff;
+}
+
+/* headerga stillar */
+.logo {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 54px;
+  color: #000000;
+}
+.gap65 {
+  gap: 65px;
+}
+header .container nav ul li a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #263238;
+}
+.letstalk {
+  height: 50px;
+  width: 185px;
+  border-radius: 5px;
+  border: 2px solid #263238;
+}
+.letstalk a {
+  display: block;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 4px 37px 0 37px;
+}
+.letstalk:hover a {
+  transition: all 0.1s ease-in-out;
+  color: var(--main-white);
+}
+.letstalk:hover {
+  background-color: var(--main-silver);
+  transition: all 0.1s ease-in-out;
+}
+.mar-top45 {
+  margin-top: 45px;
+}
+nav ul li {
+  position: relative;
+}
+nav ul li::after {
+  transition: all 0.5s ease-in-out;
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  height: 3px;
+  width: 0;
+  display: inline-block;
+  background-color: blue;
+}
+nav ul li:hover::after {
+  width: 70%;
+}
+/* headerga stillar tugadi */
+
+/* hero qismi stillar */
+.hero {
+  position: relative;
+}
+.hero img {
+  position: absolute;
+  top: 95px;
+  left: 370px;
+  right: 0;
+}
+
+.hero h2 {
+  width: 376px;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 80px;
+  color: var(--main-black);
+  margin-bottom: 40px;
+}
+.hero p {
+  width: 452px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #8f95a5;
+  margin-bottom: 60px;
+}
+.herophoto {
+  margin-top: -100px;
+}
+.mar-top115 {
+  margin: 75px 0 0 0 !important;
+}
+.getstarted {
+  height: 60px;
+  width: 240px;
+  border: 1px solid var(--main-black);
+  border-radius: 15px;
+  background: var(--main-silver);
+}
+.getstarted:hover {
+  background-color: var(--main-white);
+  transition: all 0.1s ease-in-out;
+}
+.getstarted a {
+  display: block;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 54px;
+  color: var(--main-white);
+  margin: 0 40px;
+  padding-top: 3px;
+}
+.getstarted:hover a {
+  color: var(--main-silver);
+  transition: all 0.1s ease-in-out;
+}
+#home {
+  margin-bottom: 100px;
+}
+/* hero qismi stillar  tugadi  */
+
+/* main qismida skills stillar */
+.gap18 {
+  gap: 18px;
+}
+#skills {
+  padding-bottom: 200px;
+}
+.skillstext {
+  margin: 0 0 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 80px;
+  color: var(--main-black);
+}
+.speaking img {
+  margin: 35px 22px 0px 22px;
+}
+.speaking {
+  width: 420px;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+.speaking h3 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 80px;
+  color: #263238;
+  margin: 0 0 5px 43px;
+}
+.speaking :nth-child(3) {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8f95a5;
+  margin: 0 0 20px 43px;
+  width: 320px;
+}
+.speaking :nth-child(4) {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  width: 300px;
+  color: #8f95a5;
+  margin: 0 0 36px 43px;
+}
+.speaking button {
+  background-color: var(--main-silver);
+  height: 60px;
+  width: 200px;
+  border-radius: 5px;
+  margin-left: 42px;
+  margin-bottom: 92px;
+}
+.speaking button:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: var(--main-white);
+}
+.speaking button  {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--main-white);
+}
+.speaking button:hover  {
+  transition: all 0.3s ease-in-out;
+  color: var(--main-black);
+}
+.wrtiting {
+  height: 595px;
+  width: 410px;
+  border-radius: 10px;
+  background: #f5f5f5;
+}
+
+.wrtiting img {
+  margin: -4px 19px 0 90px;
+}
+.wrtiting h3 {
+  height: 80px;
+  width: 112px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 80px;
+  color: #263238;
+  margin: 0 0 -1px 42px;
+}
+.wrtiting p {
+  width: 355px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8f95a5;
+  margin: 0 0 33px 42px;
+}
+.wrtiting button {
+  background-color: var(--main-silver);
+  height: 60px;
+  width: 200px;
+  border-radius: 5px;
+  margin-left: 42px;
+}
+.wrtiting button:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: var(--main-white);
+}
+.wrtiting button  {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--main-white);
+}
+.wrtiting button:hover  {
+  transition: all 0.3s ease-in-out;
+  color: var(--main-black);
+}
+
+.reading {
+  height: 595px;
+  width: 410px;
+  border-radius: 10px;
+  background: #f5f5f5;
+}
+
+.reading img {
+  margin: 9px 15px 20px 15px;
+}
+.reading h3 {
+  height: 80px;
+  width: 112px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 80px;
+  color: #263238;
+  margin: 13px 0 -1px 42px;
+}
+.reading p {
+  width: 370px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8f95a5;
+  margin: 0 0 33px 42px;
+}
+.reading button {
+  background-color: var(--main-silver);
+  height: 60px;
+  width: 200px;
+  border-radius: 5px;
+  margin-left: 42px;
+}
+.reading button:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: var(--main-white);
+}
+.reading button  {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--main-white);
+}
+.reading button:hover  {
+  transition: all 0.3s ease-in-out;
+  color: var(--main-black);
+}
+
+.Skills {
+  position: relative;
+}
+.Skills .listening {
+  position: absolute;
+  top: 612px;
+  left: 438px;
+  right: 0;
+}
+.listening {
+  background: #f5f5f5;
+  border-radius: 10px;
+  height: 304px;
+  width: 840px;
+}
+.listening img {
+  margin: 44px 0 44px 100px;
+}
+.listening h3 {
+  height: 80px;
+  width: 112px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 80px;
+  color: #263238;
+  margin: 0 0 -1px 42px;
+}
+.listening p {
+  width: 320px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8f95a5;
+  margin: 0 0 33px 42px;
+}
+.listening button {
+  background-color: var(--main-silver);
+  height: 60px;
+  width: 200px;
+  border-radius: 5px;
+  margin-left: 42px;
+}
+.listening button:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: var(--main-white);
+}
+.listening button {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--main-white);
+}
+.listening button:hover  {
+  transition: all 0.3s ease-in-out;
+  color: var(--main-black);
+}
+/* main qismida skills stillar tugadi */
+
+/* main qismida about stillar */
+
+#about h3 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 80px;
+  color: var(--main-black);
+  margin-bottom: 23px;
+}
+#about .text1 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  width: 630px;
+  color: #8f95a5;
+  margin-bottom: 50px;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item:nth-child(1) {
+  width: 93px;
+}
+.item:nth-child(2) {
+  width: 94px;
+  margin: 0 93px 0 144px;
+}
+.item:nth-child(3) {
+  width: 210px;
+}
+.number {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 80px;
+  display: flex;
+  gap: 180px;
+}
+.number-desc {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #8f95a5;
+  gap: 180px;
+}
+.miqdor :nth-child(3) {
+  margin-left: -100px;
+}
+.gap200 {
+  gap: 150px;
+}
+.mar-btm200 {
+  margin-bottom: 200px;
+}
+/* main qismida about stillar tugadi */
+
+/* main star pricing stills  */
+.online-course h3 {
+  margin-top: 54px;
+  margin-bottom: 19px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 48px;
+  color: #263238;
+}
+.online-course p {
+  margin-bottom: 29px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  width: 400px;
+  color: #8f95a5;
+}
+.month {
+  height: 45px;
+  width: 240px;
+  background: #eeeeee;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #546269;
+  margin-bottom: 260px;
+}
+.month :nth-child(2) {
+  margin-right: 15px;
+  margin-top: 32px;
+}
+.month :nth-child(1) {
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 45px;
+  color: #263238;
+  margin-left: 15px;
+}
+.pricing {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 80px;
+  color: var(--main-black);
+  margin-left: 600px;
+  margin-bottom: 71px;
+}
+.live-online {
+  margin-left: 40px;
+}
+.live-online h3 {
+  margin-top: 82px;
+  margin-bottom: 19px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 48px;
+  color: #263238;
+}
+.live-online p {
+  margin-bottom: 29px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  width: 430px;
+  color: #8f95a5;
+}
+.live-month {
+  height: 45px;
+  width: 240px;
+  background: #eeeeee;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #546269;
+  margin-bottom: 260px;
+  margin-top: 63px;
+}
+.live-month :nth-child(2) {
+  margin-right: 15px;
+  margin-top: 32px;
+}
+.live-month :nth-child(1) {
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 45px;
+  color: #263238;
+  margin-left: 15px;
+}
+.personal h3 {
+  margin-top: 25px;
+  margin-bottom: 19px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 48px;
+  color: #263238;
+  width: 300px;
+}
+.personal p {
+  margin-bottom: 29px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  width: 345px;
+  color: #8f95a5;
+}
+.live-month {
+  height: 45px;
+  width: 240px;
+  background: #eeeeee;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #546269;
+  margin-bottom: 260px;
+  margin-top: 63px;
+}
+.live-month :nth-child(2) {
+  margin-right: 15px;
+  margin-top: 32px;
+}
+.live-month :nth-child(1) {
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 45px;
+  color: #263238;
+  margin-left: 15px;
+}
+
+/* main end pricing stills  */
+
+/* main start contact stills  */
+form button {
+  background-color: var(--main-silver);
+  height: 60px;
+  width: 220px;
+  border-radius: 5px;
+  margin-left: 12px;
+}
+form button {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--main-white);
+}
+form button:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: var(--main-white);
+}
+form button:hover  {
+  transition: all 0.3s ease-in-out;
+  color: var(--main-black);
+}
+form input {
+  border: 1px solid #8f95a5;
+  border-radius: 10px;
+  padding: 20px 0 20px 20px;
+  height: 60px;
+  width: 450px;
+}
+.contact div {
+  margin-top: 40px;
+}
+.contact {
+  padding-bottom: 165px;
+}
+.contact div h2 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 80px;
+  color: var(--main-black);
+  margin-bottom: 17px;
+}
+.contact div p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #8f95a5;
+  width: 706px;
+  margin-bottom: 52px;
+}
+.border {
+  border-bottom: 1px solid #c4c4c4;
+  margin-bottom: 45px;
+}
+/* main end contact stills  */
+
+/* footer start  stills  */
+footer .container {
+  margin-bottom: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .container ul li a {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #8f95a5;
+}
+footer .container ul li a:hover {
+  color: red;
+}
+footer .container ul li a:active {
+  color: green;
+}
+/* footer end  stills  */
